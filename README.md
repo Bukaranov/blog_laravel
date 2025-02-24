@@ -1,3 +1,48 @@
+## Installing and configuring the project
+
+**1.Clone the repository**
+
+Clone the repository from GitHub:
+
+`git clone https://github.com/Bukaranov/blog_laravel.git`
+
+Go to the project directory:
+
+`cd blog_laravel`
+
+**2.Installing dependencies**
+
+Install PHP dependencies via Composer:
+
+`composer install` and `npm install`
+
+**3.Setting up the environment file**
+
+Copy the .env.example file to .env:
+
+`cp .env.example .env`
+
+On Windows you can do:
+
+`copy .env.example .env`
+
+**4.Generate an application key**
+
+Generate a new application key:
+
+`php artisan key:generate`
+
+**5.Setting parameters in the .env file**
+
+Edit the .env file and specify the database connection parameters, 
+mail server - https://mailtrap.io/ and other necessary settings.
+
+**6.Migrate the database**
+
+Run migrations to create tables in the database:
+`
+php artisan migrate --seed`
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
